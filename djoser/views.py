@@ -38,7 +38,7 @@ class TokenDestroyView(views.APIView):
 
     def post(self, request):
         utils.logout_user(request)
-        return Response(status=status.HTTP_204_NO_CONTENT)
+        return Response(status=status.HTTP_200_OK)
 
 
 class UserViewSet(viewsets.ModelViewSet):
